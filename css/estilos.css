@@ -320,7 +320,7 @@ html, body {
 .hero{
     display: grid;
     grid-template-columns: 6% 1fr;
-    background-image: url(../img/fondohero.jpg);
+   background-color: #F22E62;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
