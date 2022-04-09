@@ -738,7 +738,7 @@ html, body {
         gap: 1rem;
     }
 }
-@media only screen and (max-width: 950x) {
+@media only screen and (max-width: 950px) {
     
     .proyectos__grid{
         grid-template-columns:1fr 1fr;
