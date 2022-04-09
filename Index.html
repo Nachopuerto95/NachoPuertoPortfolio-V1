@@ -20,13 +20,15 @@
             <img src="img/favicon.svg" alt="Logo porfolio">
         </a>
         <button class="toggle"><i class="fa-solid fa-bars"></i></button>
-        <nav class="nav">
-            <a href="#sobremi" class="nav__item">Sobre mí</a>
-            <a href="#habilidades" class="nav__item">Habilidades</a>
-            <a href="#proyectos" class="nav__item">Proyectos</a>
-            <a href="#contacto" class="nav__item">Contacto</a>
-            <a href="" class="btn btn--nav">Ver curriculum</a>
-        </nav>
+        <div class="nav--opacity">
+            <nav class="nav">
+                <a href="#sobremi" class="nav__item">Sobre mí</a>
+                <a href="#habilidades" class="nav__item">Habilidades</a>
+                <a href="#proyectos" class="nav__item">Proyectos</a>
+                <a href="#contacto" class="nav__item">Contacto</a>
+                <a href="" class="btn btn--nav">Ver curriculum</a>
+            </nav>
+        </div>
     </header>
     <div class="go-top-container">
         <div class="go-top-button">
@@ -244,7 +246,7 @@
     <script>
         AOS.init({
   disable: function() {
-    var maxWidth =500;
+    var maxWidth = 800;
     return window.innerWidth < maxWidth;
   }
 });
