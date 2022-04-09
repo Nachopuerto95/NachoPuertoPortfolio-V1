@@ -143,8 +143,8 @@ html, body {
 }
 @media only screen and (max-width: 450px) {
     h1{
-        font-size: 2.8rem;
-        line-height: 3.4rem;
+        font-size: 3.2rem;
+        line-height: 4rem;
         margin-bottom: 1.5rem;
     }
     h3{
@@ -318,8 +318,7 @@ html, body {
 
 /** HERO **/
 .hero{
-    display: grid;
-    grid-template-columns: 6% 1fr;
+    display: flex;
     background-image: url(../img/fondohero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -342,8 +341,7 @@ html, body {
     transform: scale(1.10);
 }
 .hero__contenido{
-    grid-column: 2/3;
-    grid-row: 1/2;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -375,10 +373,7 @@ html, body {
         width: 100%;
     }
     .hero{
-        display: grid;
-        justify-items: center;
-        grid-template-columns: 1fr;
-        gap:0;        
+        justify-items: center;       
     }
     .logo__hero{
         align-self: center;
@@ -424,6 +419,8 @@ html, body {
     .social__lista{
         position:absolute;
         margin-left: 4rem;
+        width: 100%;
+        justify-content: center;
     }
     .social__icon{
         font-size: 3.5rem;
@@ -431,11 +428,6 @@ html, body {
     }
 }
 @media only screen and (max-width: 450px) {
-    
-    .hero{
-        display: grid;
-        grid-template-columns: none;
-    }
 
     .social__icon{
         font-size: 3.5rem;
@@ -444,7 +436,7 @@ html, body {
     .social__lista{
         display: flex;
         margin-left: 0;
-        justify-self: center;
+        
     }
 }
 /** SOBRE MI **/
