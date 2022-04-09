@@ -320,7 +320,7 @@ html, body {
 .hero{
     display: grid;
     grid-template-columns: 6% 1fr;
-    background-image: url(../img/fondohero.png);
+    background-image: url(../img/fondohero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -558,7 +558,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../img/computer-1844996\ \(1\).png);
+    background-image: url(../img/fondohabilidades.jpg);
     background-position: center;
     background-size: cover;
     
