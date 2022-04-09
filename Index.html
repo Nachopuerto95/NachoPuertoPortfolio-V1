@@ -242,7 +242,12 @@
     <script src="js/form.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+  disable: function() {
+    var maxWidth =500;
+    return window.innerWidth < maxWidth;
+  }
+});
         </script>
     <script src="js/menu.js"></script>
 </body>
