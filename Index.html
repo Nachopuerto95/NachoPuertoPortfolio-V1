@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio de Jose Ignacio Puerto Mendoza (Nacho)"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,7 @@
                 <a href="#habilidades" class="nav__item">Habilidades</a>
                 <a href="#proyectos" class="nav__item">Proyectos</a>
                 <a href="#contacto" class="nav__item">Contacto</a>
-                <a href="" class="btn btn--nav">Ver curriculum</a>
+                <a href="Archivos/cvNachoPuerto.pdf" class="btn btn--nav">Ver curriculum</a>
             </nav>
         </div>
     </header>
@@ -64,17 +65,16 @@
         <div class="container--sobremi">
             
             <div class="sobremi__imagen"><img  src="img/fotosobremi.png" alt=""></div>
-
             <div class="sobremi__text">
                 <h2 class="title__black"><span class="title--green" >01</span> Sobre mí</h2>
                 <p class="p--black">Hola! me llamo Nacho Puerto y me encanta el desarrollo front end y el diseño gráfico.  Este mundo me ha interesado desde pequeño, por eso comencé mis estudos de animación 3D, 2D,  diseño de entornos interactivos y videojuegos, donde empecé a introducirme en el diseño y la programación. <br><br>
-                Al terminar, decidí comenzar la carrera de Diseño y Creaciones Digitales por la Universidad Oberta de Catalunya, mientras aprendía desarrollo front end de forma paralela y autodidacta, mediante cursos en internet y elaborando proyectos propios. <br>
+                Al terminar, decidí comenzar la carrera de Diseño y Creaciones Digitales por la Universidad Oberta de Catalunya  mientras aprendía desarrollo front end de forma paralela y autodidacta, mediante cursos en internet y elaborando proyectos propios. <br>
                 <br>     Me gusta seguir formándome, aprendiendo nuevas tecnologías y ampliando mis conocimientos tanto en programación como en diseño.
         
                 </p>
                 <div class="container_btn">
-                    <a href="#" class="btn btn__sobremi">Ver curriculum</a>
-                    <a href="#" class="btn btn__sobremi">Ver porfolio de diseño</a>
+                    <a href="Archivos/cvNachoPuerto.pdf" class="btn btn__sobremi">Ver curriculum</a>
+                    <a href="https://www.behance.net/nachopuertodesigner" class="btn btn__sobremi">Ver porfolio de diseño</a>
                 </div>
             </div>
         </div>
@@ -173,7 +173,11 @@
             <div class="proyectos__grid">
                 
                 <article class="projects__item">
-                        <img src="img/imagenejemplo.jpg" class="projects__img" alt=" ">
+                        <picture>
+                            <source srcset="imagenejemplo.webp" type="image/webp" >
+
+                            <img src="img/imagenejemplo.jpg" class="projects__img" alt=" ">
+                        </picture>
 
                         <div class="projects__hover">
                             <h3 class="projects__title">Proyecto </h2>

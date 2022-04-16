@@ -337,6 +337,7 @@ html, body {
     align-items: end;
     position: relative;
     height: 100vh;
+    min-height: 80rem;
     
 }
 .btn--hero{
@@ -372,6 +373,7 @@ html, body {
         grid-row: 1/2;
         display: flex;
         justify-content: center;
+        min-height: 80rem;
         height: 100vh;
         width: 90%;
     }
@@ -429,26 +431,17 @@ html, body {
     .social__lista{
         position:absolute;
         margin-left: 4rem;
+        display: flex;
+        margin-left: 0;
         width: 100%;
         justify-content: center;
     }
     .social__icon{
         font-size: 3.5rem;
-        margin-bottom: 3rem;
-    }
-}
-@media only screen and (max-width: 450px) {
-
-    .social__icon{
-        font-size: 3.5rem;
         margin: 1.5rem
     }
-    .social__lista{
-        display: flex;
-        margin-left: 0;
-        
-    }
 }
+
 /** SOBRE MI **/
 .sobremi{
     background-color:white;
@@ -460,6 +453,7 @@ html, body {
     font-family: var(--fuente1);
 }
 .container--sobremi{
+    min-height: 80rem;
     height: 100vh;
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -503,7 +497,7 @@ html, body {
 }
 .btn__sobremi:hover{
     background-color: var(--colorfondo);
-    transform: scale(1.10);
+   
 
 }
 
@@ -556,6 +550,7 @@ html, body {
 /** HABILIDADES **/
 
 .habilidades{
+    min-height: 80rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -681,6 +676,7 @@ html, body {
 
 .proyectos{
     background: var(--colorfondo);
+    min-height: 80rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -759,6 +755,7 @@ html, body {
 
 .contacto{
     background: var(--colorfondo);
+    min-height: 80rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
