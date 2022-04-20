@@ -13,18 +13,31 @@
      <link rel="stylesheet" href="css/estilos.css">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <script src="https://kit.fontawesome.com/2a1d174a04.js" crossorigin="anonymous"></script>
+<!-- --------- Scroll Reveal Library --------- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- --------- Swiper Library --------- -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- --------- Unicons Icons --------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- --------- CSS Files --------- -->
+  <link rel="stylesheet" href="./css/style.css">
     <title>Nacho Puerto Portfolio</title>
 </head>
 <body>
-   <header class="header">
+   <header>
         <a class="header__logo" href="Index.html">
             <img src="img/favicon.svg" alt="Logo porfolio">
         </a>
         <button class="toggle"><i class="fa-solid fa-bars"></i></button>
         <div class="nav--opacity">
-            <nav class="nav">
+            <nav>
+              <a href="#" class="nav__item">Inicio</a>
                 <a href="#sobremi" class="nav__item">Sobre mí</a>
                 <a href="#habilidades" class="nav__item">Habilidades</a>
+                <a href="#habilidades2" class="nav__item">Otras skills</a>
                 <a href="#proyectos" class="nav__item">Proyectos</a>
                 <a href="#contacto" class="nav__item">Contacto</a>
                 <a href="Archivos/cvNachoPuerto.pdf" class="btn btn--nav">Ver curriculum</a>
@@ -54,7 +67,7 @@
                         </a>
                     </li>
              </ul>
-             <div data-aos="slide-right" data-aos-duration="600" data-aos-once="true" class="hero__contenido container">
+             <div data-aos="slide-right" data-aos-duration="600" data-aos-once="true" class="hero__contenido">
                 <img src="" alt="">
                 <h1> <span class="title--green" >Hola,</span>  <br> soy Nacho Puerto, <br>desarrollador web</h1>
                 <h3>Desarrollador Front End / Diseñador Gráfico</h2>
@@ -62,7 +75,7 @@
             </div>
     </section>
     <section class="sobremi" id="sobremi">
-        <div class="container--sobremi">
+        <div class="container container--sobremi">
             
             <div class="sobremi__imagen"><img  src="img/fotosobremi.png" alt=""></div>
             <div class="sobremi__text">
@@ -79,162 +92,270 @@
             </div>
         </div>
     </section>
-    <section class="habilidades" id="habilidades">
-        <div class="habilidades__title">
-            <h2><span class="title--green" >02</span> Habilidades</h2>
+    <section class="skills section" id="habilidades">
+      <div class="container">
+        <div class="skills-box">
+          <div class="box-heading">
+            <h2 ><span class="title--green" >02</span> Habilidades</h2>
+            <div>
+              <p>
+                Como ya he mencionado, llevo formándome en diseño gráfico durante mucho tiempo, realizando diversos proyectos durante estos años he acabado por adquirir valiosos conocimientos en ese campo. Actualmente, quiero ampliar mis posibilidades enfocandome en las nuevas tecnologías de programación, especialmente las relacionadas con diseño y desarrollo web.
+              </p>
             </div>
-        <div data-aos="slide-right" data-aos-duration="1000" data-aos-once="true" class="container__h">
-                <div class="habilidad__container">
-            
-                    <div class="habilidad__logo">
-                            <img src="img/diseño.png" alt="">
-                    </div>
-                        <div class="container__grupo">
-                            <div class="centrar__icons">
-                                <img class="habilidades__icon" src="img/indesign.svg" alt="">
-                                <p class="habilidad__subtitle">Indesign</p>
-                            </div>
-                            <div class="centrar__icons">
-                                <img class="habilidades__icon" src="img/illustrator.svg" alt="">
-                                <p class="habilidad__subtitle">Illustrator</p>
-                            </div>
-                            <div class="centrar__icons">
-                                <img class="habilidades__icon" src="img/photoshop.svg" alt="">
-                                <p class="habilidad__subtitle">Photoshop</p>
-                            </div>
-                            <div class="centrar__icons">
-                                <img class="habilidades__icon" src="img/adobexd.svg" alt="">
-                                <p class="habilidad__subtitle">AdobeXD</p>
-                            </div>
-                            <div class="centrar__icons">
-                                <img class="habilidades__icon" src="img/aftereffects.svg" alt="">
-                                <p class="habilidad__subtitle">AfterEffects</p>
-                            </div>
-                            <div class="centrar__icons">
-                                <img class="habilidades__icon" src="img/premiere.svg" alt="">
-                                <p class="habilidad__subtitle">Premiere</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="habilidad__container ">
-            
-                        <div class="habilidad__logo">
-                                <img src="img/codigo.png" alt="">
-                        </div>
-                            <div class="container__grupo container__grupo-2">
-                                <div class="centrar__icons">
-                                    <img class="habilidades__icon" src="img/html5.svg" alt="">
-                                    <p class="habilidad__subtitle">HTML5</p>
-                                </div>
-                                <div class="centrar__icons">
-                                    <img class="habilidades__icon" src="img/css3.svg" alt="">
-                                    <p class="habilidad__subtitle">CSS3</p>
-                                </div>
-                                <div class="centrar__icons">
-                                    <img class="habilidades__icon" src="img/javascript.svg" alt="">
-                                    <p class="habilidad__subtitle">JavaScript</p>
-                                </div>
-                                <div class="centrar__icons">
-                                    <img class="habilidades__icon php_icon" src="img/php.svg" alt="">
-                                    <p class="habilidad__subtitle">PHP</p>
-                                </div>
-                                <div class="centrar__icons">
-                                    <img class="habilidades__icon" src="img/mysql.svg" alt="">
-                                    <p class="habilidad__subtitle">MySql</p>
-                                </div>
-                            </div>
-            
-                </div>
-                <div class="habilidad__container">
-            
-                            <div class="habilidad__logo">
-                                    <img src="img/PUNTOS.PNg" alt="">
-                            </div>
-                                <div class="container__grupo container__grupo-3">
-                                    <div class="centrar__icons">
-                                        <img class="habilidades__icon" src="img/language.svg" alt="">
-                                        <p class="habilidad__subtitle">Inglés</p>
-                                    </div>
-                                    <div class="centrar__icons">
-                                        <img class="habilidades__icon" src="img/3d.svg" alt="">
-                                        <p class="habilidad__subtitle">3D</p>
-                                    </div>
-                                    <div class="centrar__icons">
-                                        <img class="habilidades__icon" src="img/guitar.svg" alt="">
-                                        <p class="habilidad__subtitle">Música</p>
-                                    </div>
-                                </div>
-                </div>
+          </div>
+          <div class="skills-wrap">
+            <div class="skill">
+              <div class="sk-progress">
+              <svg>
+                <circle cx="75" cy="75" r="68"/>
+              </svg>
+              <h2 class="counter">
+                <span data-target="89">0</span>%
+              </h2>
+              </div>
+              <div class="sk-title">HTML</div>
+            </div>
+            <div class="skill">
+              <div class="sk-progress">
+              <svg>
+                <circle  cx="75" cy="75" r="68"/>
+              </svg>
+              <h2 class="counter">
+                <span data-target="68">0</span>%
+              </h2>
+              </div>
+              <div class="sk-title">CSS</div>
+            </div>
+            <div class="skill">
+              <div class="sk-progress">
+              <svg>
+                <circle  cx="75" cy="75" r="68"/>
+              </svg>
+              <h2 class="counter">
+                <span data-target="82">0</span>%
+              </h2>
+              </div>
+              <div class="sk-title">JavaScript</div>
+            </div>
+            <div class="skill">
+              <div class="sk-progress">
+              <svg>
+                <circle  cx="75" cy="75" r="68"/>
+              </svg>
+              <h2 class="counter">
+                <span data-target="55">0</span>%
+              </h2>
+              </div>
+              <div class="sk-title">UI Design</div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section class="proyectos" id="proyectos">
-        <div class="container">
-            <h2 class="projects__title"><span class="title--green" >03</span> Proyectos</h2>
-            <div class="proyectos__grid">
-                
-                <article class="projects__item">
-                        <picture>
-                            <source srcset="imagenejemplo.webp" type="image/webp" >
-
-                            <img src="img/imagenejemplo.jpg" class="projects__img" alt=" ">
-                        </picture>
-
-                        <div class="projects__hover">
-                            <h3 class="projects__title">Proyecto </h2>
-                            
-                        </div>
-                </article>
-                <article class="projects__item">
-                    <img src="Archivos/cuadrao.png" class="projects__img" alt=" ">
-
-                    <div class="projects__hover">
-                        <h3 class="projects__title">Proyecto </h2>
-                        
-                    </div>
-            </article>
-            <article class="projects__item">
-                <img src="Archivos/cuadrao.png" class="projects__img" alt=" ">
-
-                <div class="projects__hover">
-                    <h3 class="projects__title">Proyecto </h2>
-                    
-                </div>
-            </article>
-            <article class="projects__item">
-                <img src="Archivos/cuadrao.png" class="projects__img" alt=" ">
-
-                <div class="projects__hover">
-                    <h3 class="projects__title">Proyecto </h2>
-                    
-                </div>
-            </article>
-            <article class="projects__item">
-                <img src="Archivos/cuadrao.png" class="projects__img" alt=" ">
-
-                <div class="projects__hover">
-                    <h3 class="projects__title">Proyecto </h2>
-                    
-                </div>
-        </article>
-        <article class="projects__item">
-            <img src="Archivos/cuadrao.png" class="projects__img" alt=" ">
-
-            <div class="projects__hover">
-                <h2 class="projects__title">Proyecto </h2>
-                
+    <section class="skills2 section" id="habilidades2">
+      <div class="container">
+        <div class="skills-box">
+          <div class="box-heading">
+            <h2><span class="title--green" >03</span> Otras Skills</h2>
+            <div>
+              <p>
+                En esta sección incluyo otras tecnologías relacionadas con el diseño gráfico o en proceso de aprendizaje
+              </p>
             </div>
-        </article>
-                
-
+            <div class="skills-2class">
+              <div class="other-skills">
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk1">Adobe Indesign</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk2">Adobe Photoshop</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk3">Adobe Illustrator</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk4">Adobe Xd</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk5">Adobe After Effects</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk6">Adobe Premiere</div>
+              </div>
+              <div class=" other-skills other-skills-sc">
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk7">PHP</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk8">MySql</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk9">Jquery</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk10">Angular</div>
+                <div class="svg">
+                  <svg fill="#ff5582" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 17 14 L 17.035156 36 L 19.5 36 L 19.5 14 L 17 14 z M 31.5 14 L 31.5 21.867188 L 31.5 21.875 C 30.893 20.564 29.823125 20 28.703125 20 C 26.303125 20 24 22.372 24 27.875 C 24 32.996 25.856469 36.3125 28.480469 36.3125 C 30.111469 36.3125 31.02 35.463 31.5 34.375 L 31.5 36 L 34 36 C 33.968 35.104 34 33.681 34 32.625 L 34 14 L 31.5 14 z M 29.246094 22.111328 C 30.430094 22.111328 31.358328 23.525 31.486328 25.125 C 31.518328 25.476 31.486328 25.8685 31.486328 26.1875 L 31.486328 30.75 C 31.486328 30.75 31.457328 31.337 31.361328 31.625 C 30.817328 33.864 29.824641 34.263672 29.056641 34.263672 C 27.264641 34.263672 26.462891 31.139 26.462891 27.875 C 26.462891 24.772 27.198094 22.111328 29.246094 22.111328 z"/></svg>
+                </div>
+                <div class="bar sk11">NodeJs</div>
+              </div>
             </div>
+          </div>
         </div>
+        
+      </div>
     </section>
+    <section class="portfolio section" id="proyectos">
+        <div class="modal">
+          <div class="modal-overlay"></div>
+          <div class="slider-wrap">
+            <div class="prev-btn navigation">
+              <i class="uil uil-angle-left-b"></i>
+            </div>
+            <div class="images">
+              <img class="showImage" src="assets/port1.jpg">
+              <img src="assets/port2.png">
+              <img src="assets/port3.jpg">
+              <img src="assets/port4.png">
+              <img src="assets/port5.png">
+              <img src="assets/port6.jpg">
+            </div>
+            <div class="next-btn navigation">
+              <i class="uil uil-angle-right-b"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container"> 
+          <div class="portfolio-header">
+            <div class="portfolio-title">
+              <h2><span class="title--green" >04</span> Proyectos</h2>
+            </div>
+            <div class="filter-btns">
+              <button class="filter-btn" data-filter="all">All</button> 
+              <button class="filter-btn" data-filter=".acabados">Acabados</button>
+              <button class="filter-btn" data-filter=".desarrollo">En desarrollo</button>
+            </div>
+             
+          </div>
+          <div class="portfolio-gallery">
+            <div class="mix prt-card acabados">
+              <div class="prt-image">
+                 <img src="assets/port1.jpg" alt="">
+                 <div class="prt-overlay">
+                   <span class="prt-icon zoom-icon" style="--i: 0s">
+                    <i class="uil uil-search-plus"></i>
+                   </span>
+                   <a href="https://zesty-bublanina-82c77c.netlify.app/" class="prt-icon" style="--i: .15s">
+                    <i class="uil uil-link-h"></i>
+                   </a>
+                 </div>
+              </div>
+              <div class="prt-desc">
+                <h3>HTML5 CSS5 y JavaScript</h3>
+              </div>
+            </div>
+            <div class="mix prt-card acabados">
+              <div class="prt-image">
+                 <img src="assets/port2.png" alt="">
+                 <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
+                   <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                   <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>En progreso...</h3>
+              </div>
+            </div>
+            <div class="mix prt-card desarrollo">
+              <div class="prt-image">
+                 <img src="assets/port2.png" alt="">
+                 <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
+                   <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                   <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3></h3>
+              </div>
+            </div>
+            <div class="mix prt-card desarrollo">
+              <div class="prt-image">
+                 <img src="assets/port2.png" alt="">
+                 <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
+                   <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                   <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3></h3>
+              </div>
+            </div>
+            <div class="mix prt-card desarrollo">
+              <div class="prt-image">
+                 <img src="assets/port2.png" alt="">
+                 <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
+                   <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                   <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3></h3>
+              </div>
+            </div>
+            <div class="mix prt-card 
+            desarrollo">
+              <div class="prt-image">
+                 <img src="assets/port2.png" alt="">
+                 <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
+                   <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                   <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <section class="contacto" id="contacto">
         
         <div class="container contacto__container">
             <form id="form" class="form" action="">
-                <h2 class="contacto__title"><span class="title--green">04</span> Contacto</h2>
-                <p class="form_paragraph">Estoy interesado en todo tipo de proyectos, sobre todo los más grandes y ambiciosos. Si tienes alguna duda o deseas ponerte en contacto conmigo puedes hacerlo mediante el siguiente formulario</p>
+                <h2 class="contacto__title"><span class="title--green">05</span> Contacto</h2>
+                <p class="form_paragraph">Estoy interesado en todo tipo de proyectos,  todo los más grandes y ambiciosos. Si tienes alguna duda o deseas ponerte en contacto conmigo puedes hacerlo mediante el siguiente formulario</p>
                 <input name="name" class="form__input" type="text"  placeholder="Nombre o empresa">
                 <input class="form__input" type="text"  placeholder="Correo">
                 <textarea name="message" class="form__input form__mensaje" placeholder="Mensaje"></textarea>
@@ -256,5 +377,8 @@
 });
         </script>
     <script src="js/menu.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/mixitup.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
