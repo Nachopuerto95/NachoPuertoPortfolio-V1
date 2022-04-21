@@ -729,7 +729,7 @@ fill: #ff9d00;
     font-size: 3rem;
   }
   .sk-title{
-    color: white;
+    color: rgba(255, 255, 255, 0.704);
     margin-top: 0.75rem;
     font-weight: 400;
     transition: .3s color;
@@ -759,19 +759,19 @@ fill: #ff9d00;
     width: 70%;
 }
 .sk7::before{
-    width: 2%;
+    width: 22%;
 }
 .sk8::before{
-    width: 2%;
+    width: 19%;
 }
 .sk9::before{
-    width: 2%;
+    width: 28%;
 }
 .sk10::before{
-    width: 2%;
+    width: 32%;
 }
 .sk11::before{
-    width: 2%;
+    width: 26%;
 }
 /** HABILIDADES **/
 
