@@ -334,7 +334,7 @@ header{
 /** HERO **/
 .hero{
     display: flex;
-    background-image: url(../img/fondohero.jpg);
+    background-image: url(../img/fondohero.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -574,14 +574,14 @@ header{
     display: flex;
     justify-content:center;
     align-items: center;
-    background-image: url(../img/fondohabilidades.jpg);
+    background-image: url(../img/computer-1844996\ \(1\).webp);
     background-position: center;
     background-size: cover;
     height: 100vh;
     min-height: 80rem;
   }
   .skills2{
-      background-image: url(../img/code-g7f9f02506_1920.jpg);
+      background-image: url(../img/code-g7f9f02506_1920.webp);
   }
   
    .svg svg{
@@ -775,19 +775,6 @@ fill: #ff9d00;
 }
 /** HABILIDADES **/
 
-.habilidades{
-    min-height: 80rem;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url(../img/fondohabilidades.jpg);
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-    
-
-}
 .habilidad__logo{
     width: 12rem;
     margin-right: 2rem;

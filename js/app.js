@@ -22,7 +22,6 @@ const hamburguer = document.querySelector(".hamburguer")
 window.addEventListener("scroll", () => {
     activeLink();
     if(!skillsPlayed) skillsCounter();
-    if(!mlPlayed) mlCounter();
 });
 
 function updateCount(num, maxNum){
